@@ -1,4 +1,6 @@
 import React, { Component, Fragment } from "react";
+import PropTypes from 'prop-types';
+
 import Aux from '../../../hoc/Aux';
 import withClass from '../../../hoc/withClass'
 import classes from "./Person.css";
@@ -22,5 +24,7 @@ class Person extends Component {
     );
   }
 }
+
+Person.propTypes = {};
 
 export default withClass(Person, classes.Person);
